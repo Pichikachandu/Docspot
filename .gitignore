@@ -1,0 +1,27 @@
+# Ignore video files
+*.mkv
+*.mp4
+*.mov
+*.avi
+
+# Ignore large files
+*.pdf
+
+# Ignore node_modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
