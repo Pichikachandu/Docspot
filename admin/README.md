@@ -1,12 +1,101 @@
-# React + Vite
+# DocSpot Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive admin interface for managing the DocSpot healthcare platform. Built with React 19, Vite, and Material-UI.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dashboard**: Overview of platform statistics and recent activities
+- **Doctor Management**: Add, view, and manage doctors' availability
+- **Appointment Management**: View and manage all appointments
+- **User Management**: Monitor and manage platform users
 
-## Expanding the ESLint configuration
+## 🚀 Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js >= 20.0.0
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/docspot.git
+   cd docspot/admin
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Create a `.env` file in the admin directory with the following variables:
+   ```env
+   VITE_BACKEND_URL=http://localhost:5000
+   ```
+
+4. Start the development server
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. Open [http://localhost:5174](http://localhost:5174) in your browser
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🏗️ Project Structure
+
+```
+admin/
+├── src/
+│   ├── assets/          # Static assets
+│   ├── components/      # Reusable components
+│   ├── context/         # React context providers
+│   ├── pages/           # Page components
+│   │   ├── Admin/       # Admin-specific pages
+│   │   └── Doctor/      # Doctor-specific pages
+│   ├── App.jsx          # Main application component
+│   └── main.jsx         # Application entry point
+├── .env                 # Environment variables
+└── package.json         # Project dependencies and scripts
+```
+
+## 🔧 Technologies Used
+
+- React 19
+- Vite
+- Material-UI
+- Ant Design
+- React Router
+- Axios
+- Tailwind CSS
+- React Toastify
+
+## 🔒 Authentication
+
+The admin panel uses JWT for authentication. Make sure to set up the backend with proper authentication endpoints.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📧 Contact
+
+For any inquiries, please contact [Your Name] at [your.email@example.com].
